@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% for i in msg %}
+    <br>{{ i.msg }} {{i.created_at |date:'Y-m-d H:i' }}
+{% endfor %}
+<form action="" method="post">
+    内容<input type="text" value="" id="text" name="text">
+    <input type="submit" value="上传">
+</form>
+</body>
+</html>
